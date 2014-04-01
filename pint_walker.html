@@ -1,0 +1,17 @@
+<head>
+  <title>pint_walker</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>PINT 500</h1>
+  {{#each greeting}}
+    <li>{{name}}: {{email}}</li>
+    <input id="{{_id}}" type="text"/>
+    <input id="{{_id}}" type="date"/>
+    <input id="{{_id}}" type="submit" value="submit for {{name}}"/>
+  {{/each}}
+</template>
