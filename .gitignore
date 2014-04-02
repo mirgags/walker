@@ -1,5 +1,10 @@
 *.txt
+<<<<<<< HEAD
 *.csv
 *.swp
 *./meteor
+=======
+*.swp
+*.csv
+>>>>>>> b2143bc1114395fd352f8f9965ba8cec4de0170a
 
