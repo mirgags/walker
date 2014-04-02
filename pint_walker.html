@@ -1,0 +1,25 @@
+<head>
+  <title>pint_walker</title>
+</head>
+
+<body>
+  {{> add_user}}
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>PINT 500</h1>
+  {{#each greeting}}
+    <li>{{name}}: {{email}}</li>
+    <input id="{{_id}}" type="text"/>
+    <input id="{{_id}}" type="date"/>
+    <input id="{{_id}}" type="submit" value="submit for {{name}}"/>
+  {{/each}}
+</template>
+
+<template name="add_user">
+  <h1>Add User</h1>
+  <input id="userName" type="text"/>
+  <input id="userEmail" type="text"/>
+  <input type="submit" value="Add User"/>
+</template>
