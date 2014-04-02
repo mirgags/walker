@@ -26,11 +26,7 @@ if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
     if (Walks.find().count() === 0) {
-<<<<<<< HEAD
       Walks.insert({distance: 3.2, date: Date.now(), companions: null});
-=======
-      Walks.insert({distance: 3.2, date: d.getTime(), companions: null});
->>>>>>> b2143bc1114395fd352f8f9965ba8cec4de0170a
     };
     if (Users.find().count() === 0) {
       Users.insert({email: 'mmiraglia@pint.com', name: 'Mark Miraglia'});
